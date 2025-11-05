@@ -1,5 +1,5 @@
 # 🚗 A Modular Framework for Data Cleaning and Validation
-### MSc Dissertation Project – Dublin Business School (2024–2025)
+### MSc Dissertation Project – Dublin Business School
 **Author:** Jayavardhan Premnath  
 **Dataset:** [Motor Vehicle Collisions – Crashes](https://catalog.data.gov/dataset/motor-vehicle-collisions-crashes)
 
