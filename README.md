@@ -23,7 +23,7 @@ This project combines **data preprocessing**, **ML-based data quality checks**, 
 | **2. Schema Enforcement** | Pandera | Ensures field consistency, type validation, and schema integrity. |
 | **3. Anomaly Detection** | Scikit-learn (Isolation Forest, DBSCAN) | Detects outliers or unusual patterns in crash data. |
 | **4. Integration & Reporting** | Pandas / Python | Merges cleaned data and generates validation reports. |
-| **5. Visualization (optional)** | Streamlit | Displays data quality dashboards interactively. |
+| **5. Visualization** | Streamlit | Displays data quality dashboards interactively. |
 
 ---
 
@@ -43,7 +43,7 @@ This project combines **data preprocessing**, **ML-based data quality checks**, 
 - **Pandera**
 - **Scikit-learn**
 - **Matplotlib / Seaborn**
-- **Streamlit (optional dashboard)**
+- **Streamlit**
 
 ---
 
