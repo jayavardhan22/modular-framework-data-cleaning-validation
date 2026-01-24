@@ -1,61 +1,66 @@
-A Machine Learning and Rule-Based Approach for Data Quality Validation in Traffic Collision Data
-📌 Project Overview
-This repository contains the source code and documentation for the MSc Dissertation project: "A Machine Learning and Rule-Based Approach for Data Quality Validation in Traffic Collision Data".
+🚦 Traffic Collision Data Quality Validation
 
+A Machine Learning & Rule-Based Framework
 
-Traffic collision datasets are safety-critical but often plagued by missing values, inconsistencies, and logical errors. Traditional manual cleaning is time-consuming and prone to error. This project proposes and evaluates a hybrid data quality framework that combines rule-based validation (Pandera) with Machine Learning techniques (Isolation Forest, DBSCAN) to automate the detection of anomalies in large-scale datasets.
+📘 MSc Data Analytics – Applied Research Project
+🎓 Dublin Business School
 
+⸻
 
+📌 Project Summary
 
+Traffic collision data plays a crucial role in road safety analysis, urban planning, and policy decision-making. However, real-world collision datasets often suffer from data quality issues such as missing values, duplicates, logical inconsistencies, and anomalous records.
 
-🎯 Research Objectives
-The primary objective is to design a functional artifact (Design Science Research) that:
+This project presents a hybrid, modular, and explainable data quality validation framework that combines:
+	•	✅ Rule-based validation
+	•	🧱 Schema validation
+	•	🤖 Machine learning–based anomaly detection
 
-Combines domain-specific logic rules with unsupervised machine learning.
+The framework improves data reliability, reduces manual cleaning effort, and ensures transparent and auditable validation for traffic collision datasets.
 
-Provides an automated, scalable solution for data validation.
+⸻
 
-Visualizes data quality issues through an interactive dashboard.
+🎯 Research Aim
 
-🛠️ Architecture & Methodology
-The project follows an End-to-End Hybrid Framework Flow:
+To design and evaluate an automated yet explainable validation framework that:
+	•	Detects structural and logical data issues
+	•	Identifies anomalous collision records
+	•	Preserves original data (no forced corrections)
+	•	Enhances trust in downstream analytics
 
+⸻
 
-Data Loading & Initial Cleaning: Standardization of column names and types.
+🧠 Validation Framework Overview
 
+The framework follows a step-by-step modular pipeline:
 
+1️⃣ Schema Validation
+	•	Verifies required fields exist
+	•	Checks data types and structure
+	•	Flags schema violations without modifying records
 
-Schema Validation: Utilizing Pandera to enforce data types, nullability, and value ranges.
+2️⃣ Rule-Based Validation
 
+Detects explicit data quality issues such as:
+	•	Missing or invalid latitude/longitude
+	•	Duplicate collision IDs
+	•	Negative or illogical casualty counts
+	•	Mismatches between total and category-wise injuries
 
-Rule-Based Validation:
+🟢 Fully transparent and easy to audit
 
+3️⃣ Machine Learning–Based Anomaly Detection
 
-Logical Rules: Checking consistency (e.g., pedestrians injured cannot exceed total injured).
+Unsupervised models identify irregular patterns not captured by rules:
+	•	Isolation Forest – global anomaly detection
+	•	Local Outlier Factor (LOF) – local density anomalies
+	•	DBSCAN – spatial density-based anomalies
+	•	Random Forest – used only as a benchmark
 
-
-Geospatial Rules: Constraining Latitude/Longitude to NYC bounding boxes.
-
-Unsupervised Anomaly Detection:
-
-
-Isolation Forest: The primary model for identifying global outliers.
-
-
-DBSCAN: Used for detecting spatial clusters and noise.
-
-
-Supervised Learning Benchmark: A Random Forest classifier is used to evaluate the performance of the anomaly detection.
-
-
-Visualization: A Streamlit dashboard for real-time analytics.
-
-📂 Dataset
-
-Source: NYC Motor Vehicle Collisions Dataset (NYC Open Data Portal).
-
-
-Volume: ~1 million+ records.
-
-
-Features: 29 attributes including temporal, geospatial, and casualty counts.
+4️⃣ Explainable Outputs
+	•	Clear separation between:
+	•	Rule violations
+	•	Structural issues
+	•	Statistical anomalies
+	•	No black-box decisions
+	•	No automatic deletion or correction
