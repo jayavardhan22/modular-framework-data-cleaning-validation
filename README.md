@@ -2,7 +2,7 @@
 
 Hybrid Rule-Based & Machine Learning Framework
 
-🔹 MSc Data Analytics – Applied Research Project
+🔹 MSc Data Analytics – Applied Research Project  
 🔹 Production-style data quality validation pipeline
 
 ⸻
@@ -57,9 +57,9 @@ Explainable Validation Reports + Dashboard
 	•	F1-Score: 86.0%
 	•	Error Detection Rate: 82.4%
 
-✔ High anomaly coverage
-✔ Strong interpretability
-✔ Reduced manual data cleaning
+✔ High anomaly coverage  
+✔ Strong interpretability  
+✔ Reduced manual data cleaning  
 
 ⸻
 
@@ -98,8 +98,8 @@ Explainable Validation Reports + Dashboard
 
 🎓 Author
 
-Jayavardhan Premnath
-MSc Data Analytics | Data Engineering & ML
+Jayavardhan Premnath  
+MSc Data Analytics | Data Engineering & ML  
 Dublin Business School
 
 ⸻
@@ -107,4 +107,3 @@ Dublin Business School
 ⭐ Built with a production-first mindset for data quality engineering.
 
 ⸻
-
