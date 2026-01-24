@@ -1,66 +1,110 @@
 🚦 Traffic Collision Data Quality Validation
 
-A Machine Learning & Rule-Based Framework
+Hybrid Rule-Based & Machine Learning Framework
 
-📘 MSc Data Analytics – Applied Research Project
-🎓 Dublin Business School
-
-⸻
-
-📌 Project Summary
-
-Traffic collision data plays a crucial role in road safety analysis, urban planning, and policy decision-making. However, real-world collision datasets often suffer from data quality issues such as missing values, duplicates, logical inconsistencies, and anomalous records.
-
-This project presents a hybrid, modular, and explainable data quality validation framework that combines:
-	•	✅ Rule-based validation
-	•	🧱 Schema validation
-	•	🤖 Machine learning–based anomaly detection
-
-The framework improves data reliability, reduces manual cleaning effort, and ensures transparent and auditable validation for traffic collision datasets.
+🔹 MSc Data Analytics – Applied Research Project
+🔹 Production-style data quality validation pipeline
 
 ⸻
 
-🎯 Research Aim
+🔍 Problem
 
-To design and evaluate an automated yet explainable validation framework that:
-	•	Detects structural and logical data issues
-	•	Identifies anomalous collision records
-	•	Preserves original data (no forced corrections)
-	•	Enhances trust in downstream analytics
+Real-world traffic collision datasets often contain:
+	•	Missing or invalid coordinates
+	•	Duplicate records
+	•	Logical inconsistencies in casualty counts
+	•	Irregular spatial and numerical patterns
+
+These issues reduce trust in analytics, dashboards, and ML models.
 
 ⸻
 
-🧠 Validation Framework Overview
+💡 Solution
 
-The framework follows a step-by-step modular pipeline:
+A modular, explainable data quality validation framework that combines:
+	•	🧱 Schema validation (structure & data types)
+	•	✅ Rule-based checks (deterministic, auditable)
+	•	🤖 Unsupervised anomaly detection (pattern-based)
 
-1️⃣ Schema Validation
-	•	Verifies required fields exist
-	•	Checks data types and structure
-	•	Flags schema violations without modifying records
+Designed to scale, reduce manual preprocessing, and preserve data integrity.
 
-2️⃣ Rule-Based Validation
+🧠 Architecture
 
-Detects explicit data quality issues such as:
-	•	Missing or invalid latitude/longitude
-	•	Duplicate collision IDs
-	•	Negative or illogical casualty counts
-	•	Mismatches between total and category-wise injuries
+Raw Data
+   ↓
+Schema Validation
+   ↓
+Rule-Based Validation
+   ↓
+Anomaly Detection (IF, LOF, DBSCAN)
+   ↓
+Explainable Validation Reports + Dashboard
 
-🟢 Fully transparent and easy to audit
+⸻
 
-3️⃣ Machine Learning–Based Anomaly Detection
-
-Unsupervised models identify irregular patterns not captured by rules:
-	•	Isolation Forest – global anomaly detection
+🤖 Models Used
+	•	Isolation Forest – primary anomaly detector
 	•	Local Outlier Factor (LOF) – local density anomalies
-	•	DBSCAN – spatial density-based anomalies
-	•	Random Forest – used only as a benchmark
+	•	DBSCAN – spatial density anomalies
+	•	Random Forest – benchmark only
 
-4️⃣ Explainable Outputs
-	•	Clear separation between:
-	•	Rule violations
-	•	Structural issues
-	•	Statistical anomalies
-	•	No black-box decisions
-	•	No automatic deletion or correction
+⸻
+
+📊 Key Results
+	•	Isolation Forest
+	•	Precision: 88.5%
+	•	Recall: 83.7%
+	•	F1-Score: 86.0%
+	•	Error Detection Rate: 82.4%
+
+✔ High anomaly coverage
+✔ Strong interpretability
+✔ Reduced manual data cleaning
+
+⸻
+
+🖥️ Streamlit Dashboard
+	•	End-to-end execution of validation pipeline
+	•	Visualisation of anomalies & rule violations
+	•	Metrics for model performance and detection rate
+
+⸻
+
+🛠️ Tech Stack
+	•	Python
+	•	Pandas / NumPy
+	•	Scikit-learn
+	•	Streamlit
+	•	Matplotlib / Seaborn
+
+⸻
+
+📁 Repository Structure
+
+├── streamlit_dashboard.py
+├── validation_pipeline/
+├── data/
+├── outputs/
+├── notebooks/
+└── README.md
+
+🎯 Engineering Highlights
+	•	Modular, reusable pipeline design
+	•	No black-box corrections (flag, don’t fix)
+	•	Designed for real-world public-sector data
+	•	ML + rules combined for better coverage
+
+⸻
+
+🎓 Author
+
+Jayavardhan Premnath
+MSc Data Analytics | Data Engineering & ML
+Dublin Business School
+
+⸻
+
+⭐ Built with a production-first mindset for data quality engineering.
+
+⸻
+
