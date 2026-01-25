@@ -40,7 +40,7 @@ Schema Validation
 ⬇️  
 Rule-Based Validation  
 ⬇️  
-Anomaly Detection (IF, LOF, DBSCAN)
+Anomaly Detection (IF, LOF, DBSCAN)  
 ⬇️  
 Streamlit Validation Reports & Dashboard
 
