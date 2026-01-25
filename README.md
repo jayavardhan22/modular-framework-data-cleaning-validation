@@ -90,9 +90,10 @@ Streamlit Validation Reports & Dashboard
 
 ## 📁 Repository Structure
 
+```text
 ├── 20046512-A Machine Learning and Rule-Based Approach for Data Quality Validation in Traffic Collision Data (Report).pdf
 ├── 20046512-Code/
-│   └── Google_Colab_Notebooks
+│   └── Google_Colab_Notebooks/
 ├── 20046512-PPT-A Machine Learning and Rule-Based Approach for Data Quality Validation in Traffic Collision Data.pptx
 ├── dataset/
 │   └── traffic_collisions_data.csv
