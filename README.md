@@ -35,6 +35,7 @@ Designed to **scale**, **reduce manual preprocessing**, and **preserve data inte
 ## 🧠 Architecture
 
 - Raw Data
+
 ↓
 - Schema Validation
 ↓
