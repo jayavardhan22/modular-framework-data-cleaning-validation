@@ -40,10 +40,7 @@ Schema Validation
 ⬇️  
 Rule-Based Validation  
 ⬇️  
-Anomaly Detection  
-&nbsp;&nbsp;• Isolation Forest (IF)  
-&nbsp;&nbsp;• Local Outlier Factor (LOF)  
-&nbsp;&nbsp;• DBSCAN  
+Anomaly Detection (IF, LOF, DBSCAN) 
 ⬇️  
 Streamlit Validation Reports & Dashboard
 
