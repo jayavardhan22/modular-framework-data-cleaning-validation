@@ -118,5 +118,3 @@ MSc Data Analytics | Data Engineering & ML
 Dublin Business School
 
 ---
-
-⭐ *Built with a production-first mindset for data quality engineering.*
