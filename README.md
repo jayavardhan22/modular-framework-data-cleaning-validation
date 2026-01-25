@@ -34,16 +34,18 @@ Designed to **scale**, **reduce manual preprocessing**, and **preserve data inte
 
 ## 🧠 Architecture
 
-- Raw Data
-
-↓
-- Schema Validation
-↓
-- Rule-Based Validation
-↓
-- Anomaly Detection (IF, LOF, DBSCAN)
-↓
-- Explainable Validation Reports + Dashboard
+Raw Data  
+⬇️  
+Schema Validation  
+⬇️  
+Rule-Based Validation  
+⬇️  
+Anomaly Detection  
+&nbsp;&nbsp;• Isolation Forest (IF)  
+&nbsp;&nbsp;• Local Outlier Factor (LOF)  
+&nbsp;&nbsp;• DBSCAN  
+⬇️  
+Explainable Validation Reports & Dashboard
 
 ---
 
