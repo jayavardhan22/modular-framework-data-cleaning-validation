@@ -34,15 +34,15 @@ Designed to **scale**, **reduce manual preprocessing**, and **preserve data inte
 
 ## 🧠 Architecture
 
-Raw Data
+- Raw Data
 ↓
-Schema Validation
+- Schema Validation
 ↓
-Rule-Based Validation
+- Rule-Based Validation
 ↓
-Anomaly Detection (IF, LOF, DBSCAN)
+- Anomaly Detection (IF, LOF, DBSCAN)
 ↓
-Explainable Validation Reports + Dashboard
+- Explainable Validation Reports + Dashboard
 
 ---
 
