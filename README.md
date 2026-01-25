@@ -45,7 +45,7 @@ Anomaly Detection
 &nbsp;&nbsp;• Local Outlier Factor (LOF)  
 &nbsp;&nbsp;• DBSCAN  
 ⬇️  
-Explainable Validation Reports & Dashboard
+Streamlit Validation Reports & Dashboard
 
 ---
 
